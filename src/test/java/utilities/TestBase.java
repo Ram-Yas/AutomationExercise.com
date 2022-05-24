@@ -1,5 +1,7 @@
 package utilities;
 
+
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -22,7 +24,7 @@ public abstract class TestBase {
     @After
     public void tearDown() throws Exception {
 
-        driver.quit();
+      // driver.quit();
 
     }
 }
