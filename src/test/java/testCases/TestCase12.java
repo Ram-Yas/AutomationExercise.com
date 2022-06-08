@@ -37,9 +37,10 @@ public class TestCase12 extends TestBase {
         //actions.moveToElement(secondProduct).perform();
         WebElement addToChart2 = driver.findElement(By.xpath("(//a[@data-product-id='2'])[1]"));
         addToChart2.click();
-
         //8. Click 'View Cart' button
         driver.findElement(By.xpath("(//a[@href='/view_cart'])[1]")).click();
+
+
         //9. Verify both products are added to Cart
         Assert.assertTrue(firstProductText.isDisplayed());
         //10. Verify their prices, quantity and total price
